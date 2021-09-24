@@ -1,0 +1,22 @@
+{
+    "baseUrl": "http://computer-database.herokuapp.com",
+    "integrationFolder": "cypress/tests",
+    "screenshotsFolder": "cypress/results/screenshots",
+    "videosFolder": "cypress/results/videos",
+    "reporter": "mocha-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mocha-junit-reporter, mochawesome",
+        "mochaJunitReporterReporterOptions": {
+            "mochaFile": "cypress/results/junit-reports/results_[hash].xml",
+            "toConsole": false,
+            "overwrite": false
+        },
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/results/mochawesome-reports",
+            "reportTitle": "mochawesome_[hash]",
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
+}

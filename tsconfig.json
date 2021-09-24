@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "baseUrl": "./node_modules",
+        "target": "es2017",
+        "module": "commonjs",
+        "lib": ["es2017", "dom"],
+        "typeRoots": ["../node_modules/@types"],
+        "types": ["cypress", "node"]
+    },
+
+    "include": [
+        "**/*.js",
+        "**/*.ts",
+        "./cypress",
+         "**/*.d.ts"
+    ],
+
+    "exclude": [
+        "node_modules"]
+}
